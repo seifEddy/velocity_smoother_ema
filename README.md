@@ -27,6 +27,11 @@ Adapt the parameters to much your needs, then run the following:
 ```console
 you@you:~$ roslaunch velocity_smoother_ema velocity_smoother_emp.launch
 ```
+or you can use rosrun
+
+```console
+you@you:~$ rosrun velocity_smoother_ema velocity_smoother_emp_node
+```
 
 <p align="center">
   <!-- ![velocity_smoother_ema](https://github.com/seifEddy/velocity_smoother_ema/blob/master/velocity_smoother_ema.png | width=100) -->
