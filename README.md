@@ -22,4 +22,4 @@ Feel free to clone, contribute, and adapt the code to suit your specific robotic
 Let me know if there's anything else I can assist you with!
 
 <!-- ![velocity_smoother_ema](https://github.com/seifEddy/velocity_smoother_emp/blob/master/velocity_smoother_ema.png | width=100) -->
-<img src="https://github.com/seifEddy/velocity_smoother_emp/blob/master/velocity_smoother_ema.png" width="200" height="200">
+<img src="https://github.com/seifEddy/velocity_smoother_emp/blob/master/velocity_smoother_ema.png" width="300" height="300">
