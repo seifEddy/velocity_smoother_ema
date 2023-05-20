@@ -1,5 +1,5 @@
-# velocity_smoother_emp ROS package
-This repository is an implementation of the Exponential Moving Average (EMP) formula for velocity smoothing.
+# velocity_smoother_emA ROS package
+This repository is an implementation of the Exponential Moving Average (EMA) formula for velocity smoothing.
 
 # Velocity Smoother for Mobile Robots in ROS
 
@@ -21,6 +21,6 @@ Feel free to clone, contribute, and adapt the code to suit your specific robotic
 
 Let me know if there's anything else I can assist you with (seiftinik@gmail.com)!
 <p align="center">
-  <!-- ![velocity_smoother_ema](https://github.com/seifEddy/velocity_smoother_emp/blob/master/velocity_smoother_ema.png | width=100) -->
-  <img src="https://github.com/seifEddy/velocity_smoother_emp/blob/master/velocity_smoother_ema.png" width="400" height="400">
+  <!-- ![velocity_smoother_ema](https://github.com/seifEddy/velocity_smoother_ema/blob/master/velocity_smoother_ema.png | width=100) -->
+  <img src="https://github.com/seifEddy/velocity_smoother_ema/blob/master/velocity_smoother_ema.png" width="400" height="400">
 </p>
