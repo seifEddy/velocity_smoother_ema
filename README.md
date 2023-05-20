@@ -22,7 +22,7 @@ Feel free to clone, contribute, and adapt the code to suit your specific robotic
 Let me know if there's anything else I can assist you with (seiftinik@gmail.com)!
 
 ## Usage:
-Adapt the parameters to much your needs, then run the following:
+Adapt the parameters to much your needs, then launch the following:
 
 ```console
 you@you:~$ roslaunch velocity_smoother_ema velocity_smoother_emp.launch
