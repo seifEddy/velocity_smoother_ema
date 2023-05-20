@@ -1,4 +1,4 @@
-# velocity_smoother_emA ROS package
+# velocity_smoother_ema ROS package
 This repository is an implementation of the Exponential Moving Average (EMA) formula for velocity smoothing.
 
 # Velocity Smoother for Mobile Robots in ROS
