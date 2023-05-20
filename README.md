@@ -19,7 +19,7 @@ The EMA algorithm blends the current velocity measurement with the previous smoo
 
 Feel free to clone, contribute, and adapt the code to suit your specific robotic applications. Join the community and help advance the field of mobile robot control with a smoother and more efficient motion experience.
 
-Let me know if there's anything else I can assist you with!
+Let me know if there's anything else I can assist you with (seiftinik@gmail.com)!
 <p align="center">
   <!-- ![velocity_smoother_ema](https://github.com/seifEddy/velocity_smoother_emp/blob/master/velocity_smoother_ema.png | width=100) -->
   <img src="https://github.com/seifEddy/velocity_smoother_emp/blob/master/velocity_smoother_ema.png" width="400" height="400">
