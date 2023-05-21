@@ -25,12 +25,12 @@ Let me know if there's anything else I can assist you with (seiftinik@gmail.com)
 Adapt the parameters to much your needs, then launch the following:
 
 ```console
-you@you:~$ roslaunch velocity_smoother_ema velocity_smoother_emp.launch
+you@you:~$ roslaunch velocity_smoother_ema velocity_smoother_ema.launch
 ```
 or you can use rosrun
 
 ```console
-you@you:~$ rosrun velocity_smoother_ema velocity_smoother_emp_node
+you@you:~$ rosrun velocity_smoother_ema velocity_smoother_ema_node
 ```
 
 <p align="center">
