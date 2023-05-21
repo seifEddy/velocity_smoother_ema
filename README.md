@@ -1,7 +1,7 @@
 # velocity_smoother_ema ROS package
 This repository is an implementation of the Exponential Moving Average (EMA) formula for velocity smoothing.
 
-# Velocity Smoother for Mobile Robots in ROS
+## Velocity Smoother for Mobile Robots in ROS
 
 This GitHub repository provides a velocity smoother implementation for mobile robots using the Robot Operating System (ROS). The velocity smoother utilizes the Exponential Moving Average (EMA) algorithm to achieve a smoothed velocity output.
 
