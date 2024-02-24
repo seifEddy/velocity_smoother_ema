@@ -26,6 +26,7 @@ class VelocitySmootherEma
         float x_vel, y_vel, w_vel;
         float smoothed_x_vel, smoothed_y_vel, smoothed_w_vel;
         geometry_msgs::Twist cmd_vel_msg_;
+        int stop_counter = 3;
 };
 
 #endif
