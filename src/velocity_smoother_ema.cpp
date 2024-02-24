@@ -7,6 +7,7 @@ VelocitySmootherEma::VelocitySmootherEma(ros::NodeHandle* nh):nh_(*nh)
     nh_.param<std::string>("/raw_cmd_topic", raw_cmd_topic, "raw_cmd_vel");
     nh_.param<std::string>("/cmd_topic", cmd_topic, "cmd_vel");
     nh_.param<double>("/cmd_rate", cmd_rate, 30.0);
+    nh_.param<int>("/stop_counter", stop_counter, 3);
 
     velocity_sub_ = nh_.subscribe(raw_cmd_topic, 10, &VelocitySmootherEma::twist_callback, this);
     velocity_pub_ = nh_.advertise<geometry_msgs::Twist>(cmd_topic, 10, true);
@@ -32,10 +33,20 @@ void VelocitySmootherEma::twist_callback(const geometry_msgs::Twist::ConstPtr ms
 {
     // ROS_INFO("I RECEIVED A NEW MESSAGE");
     cmd_vel_msg_ = *msg;
+    stop_counter = 10;
 }
 
 void VelocitySmootherEma::update(const ros::TimerEvent&)
 {
+    if (stop_counter-- <= 0)
+    {
+        stop_counter = 0;
+        cmd_vel_msg_.linear.x = 0.0;
+        cmd_vel_msg_.linear.y = 0.0;
+        cmd_vel_msg_.angular.z = 0.0;
+        // ROS_INFO("THE CMD IS ZERO");
+    }
+    // ROS_INFO("THE CMD IS : %d", stop_counter);
     x_vel = cmd_vel_msg_.linear.x;
     y_vel = cmd_vel_msg_.linear.y;
     w_vel = cmd_vel_msg_.angular.z;
@@ -54,6 +65,7 @@ void VelocitySmootherEma::update(const ros::TimerEvent&)
 
     velocity_pub_.publish(cmd_vel_msg_);
     // ROS_INFO("PUBLISHING TWIST MESSAGE!");
+    
 }
 
 int main(int argc, char** argv)
